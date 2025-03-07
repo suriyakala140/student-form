@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <!-- link css -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Student Form</h2>
+
+    <div class="form-container">
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course Selection:</label>
+                <select id="course" required>
+                    <option value="">Select Course</option>
+                    <option value="Html&Css">Html&Css</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="React">React</option>
+                    <option value="Nodejs">Nodejs</option>
+                    <option value="Sql">Sql</option>
+                    <option value="Python">Python</option>
+                    <option value="AWS">AWS</option>                </select>
+            </div>
+
+            <button type="button" onclick="saveStudent()">Save</button>
+        </form>
+    </div>
+
+    <div class="table-container">
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Student data will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Script link -->
+     <script src="script.js"></script>
+
+</body>
+</html>
